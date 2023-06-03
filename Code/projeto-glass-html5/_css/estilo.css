@@ -1,7 +1,14 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 body {
-    background-color: #404a5251;
+    background-color: rgba(85, 79, 79, 0.152);
+    color: rgba(0, 0, 0, 1);
+}
+
+div#interface {
+    width: 400px;
+    background-color: white;
+    margin: 10px 10px 10px;
 }
 
 p {
@@ -16,7 +23,7 @@ figure.foto-legenda {
 }
 
 figure.foto-legenda img {
-    border: 8px solid white;
+    border: 0px solid white;
     box-shadow: 1px 1px 4px black;
 }
 
@@ -26,13 +33,53 @@ figure.foto-legenda figcaption {
     top: 0px;
     background-color: rgba(0, 0, 0, .4);
     color: white;
+    height: 99%;
+    width: 100%;
     padding: 10px;
     box-sizing: border-box;
     transition: opacity 1s;
-    width: 50%;
-    height: 100%;
+   
 }
 
 figure.foto-legenda:hover figcaption {
     opacity: 1;
+}
+
+nav#menu {
+    display: block;
+
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #655e5e51;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 0.4s;
+}
+
+nav#menu li:hover {
+    background-color: #00000060;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
+    text-decoration: none;
 }

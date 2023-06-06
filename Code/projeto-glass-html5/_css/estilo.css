@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 
 body {
     background-color: rgba(85, 79, 79, 0.152);
@@ -6,14 +10,45 @@ body {
 }
 
 div#interface {
-    width: 400px;
+    width: 1000px;
     background-color: white;
-    margin: 10px 10px 10px;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
 
 p {
     text-align: justify;
     text-indent: 30px;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    right: 220px;
+    top: 40px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: Arial, sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
 }
 
 /* Formatação de imgens com legenda*/
@@ -24,7 +59,9 @@ figure.foto-legenda {
 
 figure.foto-legenda img {
     border: 0px solid white;
-    box-shadow: 1px 1px 4px black;
+    box-shadow: 1px 1px 4px black;    
+    height: 100%;
+    width: 100%;
 }
 
 figure.foto-legenda figcaption {
@@ -82,4 +119,67 @@ nav#menu a {
 nav#menu a:hover {
     color: white;
     text-decoration: none;
+}
+
+section#corpo {
+    display: block;
+    width: 60%;
+    float: left;
+    border-right: 1px solid #606060;
+    padding: 10px;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;    
+}
+
+table#tabelaspec td.ce {
+    color: white;
+    background-color: #606060;
+}
+
+table#tabelaspec td.cd {
+    background-color: #cecece;    
+    font-weight: bold;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside#lateral {
+    display: block;
+    width: 35%;
+    float: right;
+    padding: 10px;
+    background-color: #dadada;
+}
+
+footer#rodape {
+    text-align: center;
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
 }

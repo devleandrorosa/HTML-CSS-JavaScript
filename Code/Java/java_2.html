@@ -10,8 +10,8 @@
         var quebrada = false;
         function mudaLampada(tipo) {
             if (!quebrada) {
-                document.getElementById("Luz").src = "../projeto-glass-html5/_imagens/" + tipo + ".jpg";
-                if (tipo == 'lampada_quebrada') {
+                document.getElementById("luz").src = "../projeto-glass-html5/_imagens/" + tipo + ".jpg";
+                if (tipo == 'lampada-quebrada') {
                     quebrada = true;
                 }
             }
@@ -21,8 +21,8 @@
 
 <body>
     <h1>Acenda a lâmpada</h1>
-    <img src="../projeto-glass-html5/_imagens/lampada-apagada.jpg" id="Luz" onmousemove="mudaLampada('lampada_acesa')"
-        onmouseout="mudaLampada('lampada_apagada')" onclick="mudaLampada('lampada_quebrada')" />
+    <img src="../projeto-glass-html5/_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')"
+        onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/>
 </body>
 
 </html>

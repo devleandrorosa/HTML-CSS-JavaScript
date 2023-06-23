@@ -61,7 +61,7 @@ header#cabecalho h2 {
     margin-top: 0px;
 }
 
-/* Formatação de imgens com legenda*/
+/* Formatação de imgens com legenda */
 
 figure.foto-legenda {
     position: relative;
@@ -136,6 +136,12 @@ section#corpo {
     width: 60%;
     float: left;
     border-right: 1px solid #606060;
+    padding: 10px;
+}
+
+section#corpo-full {
+    display: flex;
+    float: left;
     padding: 10px;
 }
 

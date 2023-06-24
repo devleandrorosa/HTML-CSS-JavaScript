@@ -140,7 +140,7 @@ section#corpo {
 }
 
 section#corpo-full {
-    display: flex;
+    display: flex;   
     float: left;
     padding: 10px;
 }
@@ -167,6 +167,16 @@ header#cabecalho-artigo h1 {
 
 .direita {
     text-align: right;
+}
+
+.direita2 {
+    text-align: right;
+    margin-right: 5px;
+}
+
+.direita3 {
+    text-align: right;
+    margin-right: -15px;
 }
 
 header#cabecalho-artigo h2 {
@@ -249,4 +259,12 @@ footer#rodape {
 
 footer#rodape p {
     text-align: center;
+}
+
+video#video2 {
+    width: 100%;
+}
+
+video#video1 {
+    width: 100%;
 }

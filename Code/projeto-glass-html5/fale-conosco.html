@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Glass</title>
     <link rel="stylesheet" href="_css/estilo.css" />
+    <link rel="stylesheet" href="_css/form.css" />
 </head>
 <script src="_javascript/funcoes.js"></script>
 
@@ -23,54 +24,72 @@
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul type="disc">
-                    <li onmouseover="mudaFoto('_imagens/home.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a
+                            href="index.html">Home</a></li>
                     <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')"><a
-                            href="specs.html">Especificações</a></li>
-                    <li onmouseover="mudaFoto('_imagens/fotos.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
-                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')"><a
-                            href="multimidia.html">Multimídia</a></li>
-                    <li onmouseover="mudaFoto('_imagens/contato.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale
+                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a
+                            href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')">
+                        <a href="multimidia.html">Multimídia</a>
+                    </li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a
+                            href="fale-conosco.html">Fale
                             conosco</a></li>
                 </ul>
             </nav>
         </header>
-        Fale Conosco > Contato
-        Formulário de Contato
-        por Gustavo Guanabara
-        Atualizado em 01/Maio/2013
-
-        Identificação do Usuário
-        Nome:
-        Senha:
-        E-mail:
-        Sexo:
-        - Masculino
-        - Feminino
-        Data de Nascimento:
-
-        Endereço do Usuário
-        Logradouro:
-        Número:
-        Estado:
-        Cidade:
-
-        Mensagem do Usuário
-        Grau de Urgência:
-        Mensagem:
-
-        Quero um Google Glass
-        Gostaria de adquirir um Google Glass quando disponível
-        Cor:
-        Quantidade:
-        Preço Total: R$
-
-
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Fale Conosco > Contato</h3>
+                        <h1>Formulário de Contato</h1>
+                        <h2>por Gustavo Guanabara</h2>
+                        <h3 class="direita3">Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
+                <form action="">
+                    <fieldset id="usuario">
+                        <legend>Identificação do Usuário</legend>
+                        <p><label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="20"
+                                maxlength="30" placeholder=" Nome Completo"></p>
+                        <p><label for="csenha">Senha:</label><input type="password" name="tsenha" id="csenha" size="8"
+                                maxlength="8" placeholder=" 8 Dígitos"></p>
+                        <p><label for="cmail">E-mail:</label><input type="email" name="tmail" id="cmail" size="20"
+                                maxlength="40" placeholder=" E-mail"></p>
+                        <fieldset id="sexo">
+                            <legend>Sexo:</legend>
+                            <input type="radio" name="tsexo" id="cmasc"><label for="cmasc">Masculino</label><br>
+                            <input type="radio" name="tsexo" id="cfem"><label for="cfem">Feminino</label>
+                        </fieldset>
+                        <p><label for="cdata">Data de Nascimento:</label><input type="date" name="tdata" id="cdata"></p>
+                    </fieldset>
+                    <fieldset id="endereco">
+                        <legend>Endereço do Usuário</legend>
+                        <p><label for="crua">Logradouro:</label><input type="text" name="trua" id="crua" size="13"
+                                maxlength="88" placeholder=" Rua, Tv., Av."></p>
+                        <p><label for="cnum">Número:</label><input type="text" name="tnum" id="cnum" min="0" max="99999"
+                                size="5"></p>
+                        <p><label for="cest">Estado:</label></p>
+                        <p><label for="ccid">Cidade:</label></p>
+                    </fieldset>
+                    <fieldset id="mensagem">
+                        <legend>Mensagem do Usuário</legend>
+                        <label for="cgrau">Grau de Urgência:</label>
+                        <label for="cmen">Mensagem:</label>
+                    </fieldset>
+                    <fieldset id="pedido">
+                        <legend>Quero um Google Glass</legend>
+                        Gostaria de adquirir um Google Glass quando disponível
+                        Cor:
+                        Quantidade:
+                        Preço Total: R$
+                    </fieldset>
+            </article>
+        </section>
         [BOTÃO ENVIAR]
+        </form>
         <footer id="rodape">
             <p>Copyright &copy; 2013 - by Gustavo Guanabara</br>
                 <a href="http://facebook.com/cursoemvideo" target="_blank">Facebook</a> | <a

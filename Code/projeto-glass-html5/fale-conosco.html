@@ -46,10 +46,10 @@
                         <h3>Fale Conosco > Contato</h3>
                         <h1>Formulário de Contato</h1>
                         <h2>por Gustavo Guanabara</h2>
-                        <h3 class="direita3">Atualizado em 01/Maio/2013</h3>
+                        <h3 class="direita">Atualizado em 01/Maio/2013</h3>
                     </hgroup>
                 </header>
-                <form action="">
+                <form method="post" id="fcontato" action="../projeto-glass-html5/_fale-conosco/">
                     <fieldset id="usuario">
                         <legend>Identificação do Usuário</legend>
                         <p><label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="20"
@@ -71,13 +71,32 @@
                                 maxlength="88" placeholder=" Rua, Tv., Av."></p>
                         <p><label for="cnum">Número:</label><input type="text" name="tnum" id="cnum" min="0" max="99999"
                                 size="5"></p>
-                        <p><label for="cest">Estado:</label></p>
-                        <p><label for="ccid">Cidade:</label></p>
+                        <p><label for="cest">Estado:</label>
+                            <select name="test" id="cest">
+                                <optgroup label="Região Sudeste">
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">Sao Paulo</option>
+                                    <option value="MG">Minas Gerais</option>
+                                </optgroup>
+                                <optgroup label="Rigião Sul">
+                                    <option value="SC" selected>Santa Catarina</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <p><label for="ccid">Cidade:</label>
+                        <input type="text" name="tcid" id="ccid" size="20" maxlength="40" placeholder="Cidade" list="cidades"></p>
+                        <datalist id="cidades">
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Itaperuna"></option>
+                            <option value="Florianópolis"></option>
+                        </datalist>
                     </fieldset>
                     <fieldset id="mensagem">
                         <legend>Mensagem do Usuário</legend>
-                        <label for="cgrau">Grau de Urgência:</label>
-                        <label for="cmen">Mensagem:</label>
+                        <p><label for="cgrau">Grau de Urgência:</label>
+                        Mín<input type="range" name="tgrau" id="cgrau" min="0" max="10" step="2">Max</p>
+                        <p><label for="cmen">Mensagem:</label>
+                        <textarea name="tmen" id="cmen" cols="45" rows="5" placeholder="Deixe aqui sua mensagem..."></textarea></p>
                     </fieldset>
                     <fieldset id="pedido">
                         <legend>Quero um Google Glass</legend>

@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
-ul#album-fotos {    
+ul#album-fotos {
     width: 700px;
     margin: 0 auto;
-    padding: 50px;    
+    padding: 50px;
     overflow: hidden;
     list-style: none;
 }
 
-ul#album-fotos li {    
+ul#album-fotos li {
     float: left;
     width: 200px;
     height: 200px;

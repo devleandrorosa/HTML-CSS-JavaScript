@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 div#tv-radio {
-    width: 1000px;
+    width: 900px;
     height: 600px;
     margin: auto;
     background: url("../_imagens/radio-tv.png") no-repeat;
